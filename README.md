@@ -26,4 +26,4 @@ In second step run 'docker compose' comando for create environment.
 
   See in Docker Desktop its container for Apache server, phpmyadmin and MariaDB are running.
 
-  ![alt Image of screen docker with containners running](imgs/docker-compose-1.png) 
+  ![alt Image of screen docker with containners running](imgs/docker-compose-1.PNG) 
