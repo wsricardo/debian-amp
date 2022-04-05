@@ -18,6 +18,8 @@ files for your directory of development.
   - docker-compose.yml
 
 
+You must to enter in this folder for run docker's commands.
+
 ### Build Image
 
 First step build Debian apache Server
