@@ -39,8 +39,8 @@ services:
     links:
       - db
       - phpmyadmin
-      
-    image: wsricardo/apache-custom
+
+    image: wsricardo/debian-amp
 
 
     volumes:
