@@ -1,0 +1,52 @@
+version: "3.9"
+services:
+  db:
+    image: mariadb
+    volumes:
+      - ./db_data:/var/lib/mysql
+    restart: always
+    ports:
+      - 8001:8002
+
+    environment:
+      MARIADB_HOST: 127.0.0.1
+      MARIADB_ROOT_PASSWORD: 39m05pg1
+      MARIADB_DATABASE: data
+      MARIADB_USER: user
+      MARIADB_PASSWORD: 39m05pg1
+    extra_hosts:
+        - "localhost:127.0.0.1"
+
+
+  phpmyadmin:
+    links:
+      - db
+    depends_on:
+      - db
+    image: phpmyadmin
+    volumes:
+      - ./phpmyadmin_data:/var/lib/phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: db
+
+    extra_hosts:
+      - "localhost:127.0.0.1"
+
+
+  apache-php:
+    links:
+      - db
+      - phpmyadmin
+      
+    image: wsricardo/apache-custom
+
+
+    volumes:
+      - ./html:/var/www/html
+    ports:
+      - 8000:80
+
+    extra_hosts:
+      - "localhost:127.0.0.1"

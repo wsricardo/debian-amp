@@ -1,0 +1,9 @@
+FROM debian:latest
+WORKDIR html
+RUN apt-get update
+RUN	apt-get install -y apache2 php bash
+RUN echo "ServerName localhost"  >> /etc/apache2/apache2.conf
+COPY . .
+EXPOSE 80
+# Run Apache server in foreground. Required.
+CMD apachectl -D FOREGROUND
