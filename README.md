@@ -1,5 +1,5 @@
 # debian-amp
-Debian server docker compose with Apache, MariaDB and PHP.
+Debian server docker compose with Apache, PHPMyAdmin, MariaDB and PHP.
 
 WEB Page https://wsricardo.blogspot.com
 
