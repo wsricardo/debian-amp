@@ -6,6 +6,18 @@ WEB Page https://wsricardo.blogspot.com
 
 ## Use
 
+### How to
+
+The files configurations and dockerfiles in the folder "src". You can copy
+files for your directory of development.
+
+``
+./
+  - dockerfiles
+    - debian-apache
+  - docker-compose.yml
+``
+
 ### Build Image
 
 First step build Debian apache Server
