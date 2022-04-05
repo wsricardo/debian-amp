@@ -25,7 +25,7 @@ You must to enter in this folder for run docker's commands.
 First step build Debian apache Server
 
 ``
-  $ docker build -t wsricardo/debian-amp -f dockerfiles/debian-apache
+  $ docker build -t wsricardo/debian-amp -f dockerfiles/debian-apache .
 ``
 
 ### Docker compose environment
