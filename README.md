@@ -13,7 +13,7 @@ files for your directory of development.
 
 
 ./
-  - dockerfiles
+  - dockerfiles/
     - debian-apache
   - docker-compose.yml
 
