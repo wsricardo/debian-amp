@@ -33,7 +33,7 @@ First step build Debian apache Server
 In second step run 'docker compose' comando for create environment.
 
 ``
-  $ docker-compose up
+  $ docker compose up
 ``
 
 ## For Windows Users
